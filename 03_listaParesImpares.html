@@ -11,7 +11,19 @@
     let listaI = []
 
     //PROCESSAMENTO
+    for (item of listaDeNumeros) {
+        if (item % 2 == 0) {
+            listaP.push(item)
+            listaP.sort((a,b) => a-b)
+            
+        }
+        else {
+            listaI.push(item)
+            listaI.sort((b,a) => a-b)
+        }
+    }
 
     //SAÍDA
-
+    document.write(`<li>Lista pares: ${listaP}</li>`)
+    document.write(`<li>Lista impares: ${listaI}</li>`)
 </script>

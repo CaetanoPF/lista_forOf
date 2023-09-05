@@ -13,11 +13,12 @@
     for (item of listaDeNumeros) {
         if (item % 2 == 0) {
             listaP.push(item)
-            document.write(`<li>${listaP}</li>`)
+            listaP.sort((a,b) => a-b)
+            
         }
 
     }
 
     //SAÍDA
-
+    document.write(`<li>${listaP}</li>`)
 </script>

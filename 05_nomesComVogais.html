@@ -7,14 +7,20 @@
 
     //ENTRADA
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"]
+    let vogais = ["A", "E", "I", "O", "U"]
+    let nomes = []
     
     //PROCESSAMENTO
     for (item of listaDeNomes) {
-        if (item ) {
-            
+       for (vog of vogais) {
+        if (item.substr(0,1) == vog) {
+            nomes.push(item)
         }
+       }
+        
+        
     }
 
     //SAÍDA
-
+document.write(`Nomes que começam com vogal ${nomes}`)
 </script>

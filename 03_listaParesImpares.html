@@ -7,23 +7,24 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    let listaP = []
-    let listaI = []
+    let pares = []
+    let impares = []
 
     //PROCESSAMENTO
     for (item of listaDeNumeros) {
         if (item % 2 == 0) {
-            listaP.push(item)
-            listaP.sort((a,b) => a-b)
-            
+            pares.push(item)
+            pares.sort((a, b) => a - b)
+
         }
         else {
-            listaI.push(item)
-            listaI.sort((b,a) => a-b)
+            impares.push(item)
+            impares.sort((b, a) => a - b)
         }
     }
 
     //SAÍDA
-    document.write(`<li>Lista pares: ${listaP}</li>`)
-    document.write(`<li>Lista impares: ${listaI}</li>`)
+    document.write(`<li>Lista pares: ${pares}.</li>`)
+    document.write(`<li>Lista ímpares: ${impares}.</li>`)
+
 </script>

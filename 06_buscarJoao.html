@@ -7,17 +7,20 @@
 
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"]
-    let joaos = []
+    let joao = []
+
     //PROCESSAMENTO
     for (item of listaDeNomes) {
-        
+
         if (item.includes('João')) {
-            joaos.push(item)
+            joao.push(item)
         }
         if (item.includes('Joao')) {
-            joaos.push(item) 
+            joao.push(item)
         }
     }
+
     //SAÍDA
-    document.write(`Nomes que contém João: ${joaos}`)
+    document.write(`Nomes que contém João: ${joao}.`)
+
 </script>

@@ -7,18 +7,18 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10]
-    let listaP = []
+    let pares = []
 
     //PROCESSAMENTO
     for (item of listaDeNumeros) {
         if (item % 2 == 0) {
-            listaP.push(item)
-            listaP.sort((a,b) => a-b)
-            
+            pares.push(item)
+            pares.sort((a, b) => a - b)
+
         }
 
     }
 
     //SAÍDA
-    document.write(`Números pares: ${listaP}`)
+    document.write(`Números pares: ${pares}.`)
 </script>

@@ -7,16 +7,16 @@
 
     //ENTRADA
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10]
-    let listaP = []
+    let pares = []
 
     //PROCESSAMENTO
     for (item of listaDeItens) {
         if (item % 2 == 0) {
-            listaP.push(item)
+            pares.push(item)
         }
     }
-    document.write(`${listaP}<br> Quantidade de números pares: ${listaP.length} <br> Quantidade de elementos da lista original: ${listaDeItens.length}`)
 
     //SAÍDA
+    document.write(`${pares}.<br> Quantidade de números pares: ${pares.length}. <br> Quantidade de elementos da lista original: ${listaDeItens.length}.`)
 
 </script>

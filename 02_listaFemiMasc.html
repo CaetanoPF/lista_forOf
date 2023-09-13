@@ -7,8 +7,8 @@
 
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"]
-    let listaM = []
-    let listaF = []
+    let masc = []
+    let femi = []
 
 
     //PROCESSAMENTO
@@ -16,16 +16,16 @@
         alert(nome)
         let genero = prompt('O nome é Masculino (M) ou Feminino (F)?').toUpperCase()
         if (genero == 'M') {
-            listaM.push(nome)
+            masc.push(nome)
 
         }
         else if (genero == 'F') {
-            listaF.push(nome)
+            femi.push(nome)
 
         }
     }
 
     //SAÍDA
-    document.write(`Masculino: ${listaM} <br>Feminino: ${listaF}`)
+    document.write(`Masculino: ${masc}. <br>Feminino: ${femi}.`)
 
 </script>
